@@ -31,13 +31,14 @@
 }
 
 .hero {
-    background: url("https://assets.nflxext.com/ffe/siteui/vlv3/538717c0-f271-40e9-a99e-b07f9c521322/785c7470-5017-4447-8845-b7eeaa9f2070/US-en-20210201-popsignuptwoweeks-perspective_alpha_website_large.jpg") no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://assets.nflxext.com/ffe/siteui/vlv3/538717c0-f271-40e9-a99e-b07f9c521322/785c7470-5017-4447-8845-b7eeaa9f2070/US-en-20210201-popsignuptwoweeks-perspective_alpha_website_large.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 46em;
     z-index: -1;
+    border-bottom: 8px solid #222;
 }
 
 .sign-in {
@@ -52,7 +53,61 @@
     cursor: pointer;
 }
 
-.card-title {
+.card-header {
+    position: relative;
+    width: 100%;
+    padding: 75px 0;
+    max-width: 950px;
+    margin: 0 auto;
+    text-align: center;
     z-index: 999;
-    color: aliceblue;
+    margin-top: 7%;
+    color: white;
+}
+
+.card-title {
+    font-size: 4rem;
+    max-width: 776px;
+    font-weight: bolder;
+    margin: 0 auto;
+}
+
+.card-subtitle1 {
+    font-size: 1.625rem;
+    margin: .625em auto;
+}
+
+.subscribe {
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+}
+
+.form-wrapper {
+    max-width: 950px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.input-wrapper {
+    display: flex;
+    flex: auto;
+    margin-top: 1.25em;
+    justify-content: center;
+}
+
+.input-bar {
+    height: 2.75em;
+    width: 64%
+}
+
+.start {
+    background-color: #e50914;
+    border-left: 1px solid #333;
+    padding: 15px 30px;
+    color: white;
+    font-weight: 600;
 }
